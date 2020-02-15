@@ -7,6 +7,7 @@ public class PlayerController : MonoBehaviour
     // Start is called before the first frame update
     public Animator anim;
     public float Speed;
+    public bool attack = false;
     void Start()
     {
         
@@ -34,6 +35,13 @@ public class PlayerController : MonoBehaviour
         if(Input.GetKey(KeyCode.LeftArrow)){
             anim.SetInteger("Direction", 2);
             translation += Vector3.left * Speed;
+        }
+        if(Input.GetKey(KeyCode.Z) && !attack){
+            anim.SetTrigger("Attack");
+            attack = true;
+        }
+        if(attack && !Input.GetKey(KeyCode.Z)){
+            attack = false;
         }
         transform.Translate(translation);
     }
