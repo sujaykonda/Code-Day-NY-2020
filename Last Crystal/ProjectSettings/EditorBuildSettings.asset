@@ -8,4 +8,19 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/SampleScene.unity
     guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/Scenes/FirstLevel.unity
+    guid: a950f6fc6e411ed4ab393a8ba7b6ecc8
+  - enabled: 1
+    path: Assets/Scenes/Air.unity
+    guid: e23833fa7d5b8e543a26cedbbbf88cde
+  - enabled: 1
+    path: Assets/Scenes/Earth.unity
+    guid: 956b978f3458b87419de486c66c06851
+  - enabled: 1
+    path: Assets/Scenes/Fire.unity
+    guid: ef971b36bf566f44a8f8873adbbb05db
+  - enabled: 1
+    path: Assets/Scenes/Water.unity
+    guid: 177108cc6d13c8f4c95b049d69526458
   m_configObjects: {}
