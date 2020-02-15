@@ -2816,3 +2816,79 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2103050548
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2103050550}
+  - component: {fileID: 2103050549}
+  m_Layer: 0
+  m_Name: Hitbox
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!60 &2103050549
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2103050548}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 12.093257, y: 5.3013897}
+      - {x: 11.981983, y: -2.562305}
+      - {x: 11.9130745, y: -4.4605923}
+      - {x: 6.168527, y: -3.4923828}
+      - {x: 6.169662, y: -2.649083}
+      - {x: 7.1395016, y: -2.5890436}
+      - {x: 7.0340033, y: -2.435421}
+      - {x: 7.1110287, y: 3.4122145}
+      - {x: 6.125148, y: 3.3917322}
+      - {x: 6.034752, y: 4.3791313}
+      - {x: -7.9561243, y: 4.3162956}
+      - {x: -7.9867673, y: 3.3925924}
+      - {x: -8.850526, y: 3.355887}
+      - {x: -8.905323, y: -2.6650398}
+      - {x: -7.9030604, y: -2.666379}
+      - {x: -7.9023886, y: -3.55893}
+      - {x: 5.973803, y: -3.624385}
+      - {x: 11.925821, y: -4.528262}
+      - {x: -13.801249, y: -4.560603}
+      - {x: -13.923001, y: 5.4189367}
+--- !u!4 &2103050550
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2103050548}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.92278093, y: -0.40145278, z: -2.5917969}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
