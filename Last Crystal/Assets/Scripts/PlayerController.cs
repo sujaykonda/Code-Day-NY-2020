@@ -2,12 +2,13 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerController : MonoBehaviour
+public class PlayerController : MonoBehaviour, Ibeam
 {
     // Start is called before the first frame update
     public Animator anim;
     public float Speed;
     public bool attack = false;
+    public GameObject beamObject;
     void Start()
     {
         
@@ -44,5 +45,8 @@ public class PlayerController : MonoBehaviour
             attack = false;
         }
         transform.Translate(translation);
+    }
+    public void beam(){
+        Instantiate(beamObject);
     }
 }

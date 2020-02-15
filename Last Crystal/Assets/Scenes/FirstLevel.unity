@@ -3270,6 +3270,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   anim: {fileID: 1850019062}
   Speed: 0.1
+  attack: 0
+  beamObject: {fileID: 8613583213489274872, guid: bb6c3533146b8d342817e5028c3b0289,
+    type: 3}
 --- !u!50 &1850019058
 Rigidbody2D:
   serializedVersion: 4
