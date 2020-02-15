@@ -47,6 +47,6 @@ public class PlayerController : MonoBehaviour, Ibeam
         transform.Translate(translation);
     }
     public void beam(){
-        Instantiate(beamObject);
+        GameObject beam = Instantiate(beamObject);
     }
 }
