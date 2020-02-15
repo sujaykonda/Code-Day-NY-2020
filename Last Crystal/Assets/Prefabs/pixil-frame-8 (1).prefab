@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3021273992016871859}
   - component: {fileID: 881101140086785745}
+  - component: {fileID: -5781298209907362650}
   m_Layer: 0
   m_Name: pixil-frame-8 (1)
   m_TagString: Untagged
@@ -81,3 +82,15 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &-5781298209907362650
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8613583213489274872}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b50d9bbe6fda18e42af3544d0ba68a83, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

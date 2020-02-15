@@ -9,6 +9,7 @@ public class PlayerController : MonoBehaviour, Ibeam
     public float Speed;
     public bool attack = false;
     public GameObject beamObject;
+    int dir = 0;
     void Start()
     {
         
@@ -40,6 +41,7 @@ public class PlayerController : MonoBehaviour, Ibeam
         if(Input.GetKey(KeyCode.Z) && !attack){
             anim.SetTrigger("Attack");
             attack = true;
+            dir = anim.GetInteger("Direction");
         }
         if(attack && !Input.GetKey(KeyCode.Z)){
             attack = false;
@@ -48,5 +50,21 @@ public class PlayerController : MonoBehaviour, Ibeam
     }
     public void beam(){
         GameObject beam = Instantiate(beamObject);
+        if(dir == 0 || dir == 3){
+            beam.transform.eulerAngles = new Vector3(0, 0, 90); 
+        }
+        if(dir == 0){
+            beam.transform.position = transform.position + Vector3.up*5;
+        }
+        if(dir == 1){
+            beam.transform.position = transform.position + Vector3.right*5;
+        }
+        if(dir == 2){
+            beam.transform.position = transform.position + Vector3.left*5;
+        }
+        if(dir == 3){
+            beam.transform.position = transform.position + Vector3.down*5;
+        }
+        beam.transform.localScale = new Vector3(10,1,1);
     }
 }
