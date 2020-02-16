@@ -7,15 +7,17 @@ public class BossController : MonoBehaviour, IDamage
     public GameObject proj;
     public Transform tar;
     public float attackSpeed = 1f;
+    public SpriteRenderer renderer;
+    public Sprite[] sprites;
+    public Vector3[] positions;
+    public float movementSpeed = 1;
     float timer = 0;
-    float health = 10;
+    public float maxhealth = 50f;
+    float health;
     float hitTimer = 0;
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
+    void Start(){
+        health = maxhealth;
+    }    
     // Update is called once per frame
     void FixedUpdate()
     {
@@ -28,11 +30,20 @@ public class BossController : MonoBehaviour, IDamage
             Instantiate(proj, transform.position, transform.rotation);
             timer = 0;
         }
+        
     }
     public void Hit(float damage){
-        if(hitTimer > 0.1){
+        if(hitTimer > 0.1f){
             hitTimer = 0;
             health -= damage;
+            for(var i = 0; i < 17; i++){
+                if((i*maxhealth/17) <= health && health <= ((i+1)*maxhealth/17)){
+                    renderer.sprite = sprites[i];
+                }
+            }
+            if(health < 0){
+                renderer.sprite = sprites[0];
+            }
         }
     }
 }

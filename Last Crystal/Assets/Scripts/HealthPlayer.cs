@@ -13,18 +13,24 @@ public class HealthPlayer : MonoBehaviour, IDamage
     {
         helth = 100;
         for(var i = 0; i < 33; i++){
-            if((i*100/33) < helth && helth <= ((i+1)*100/33)){
+            if((i*100/33) <= helth && helth <= ((i+1)*100/33)){
                 thing.sprite = Health[i];
             }
+        }
+        if(helth < 0){
+            thing.sprite = Health[0];
         }
     }
     void Update()
     {
         hitTimer += Time.deltaTime;
         for(var i = 0; i < 33; i++){
-            if((i*100/33) < helth && helth <= ((i+1)*100/33)){
+            if((i*100/33) <= helth && helth <= ((i+1)*100/33)){
                 thing.sprite = Health[i];
             }
+        }
+        if(helth < 0){
+            thing.sprite = Health[0];
         }
     }
     public void Hit(float damage){
@@ -32,6 +38,7 @@ public class HealthPlayer : MonoBehaviour, IDamage
             hitTimer = 0;
             helth -= damage;
         }
+        
     }
 }
 
