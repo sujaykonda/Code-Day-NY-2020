@@ -97,8 +97,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   damage: 5
   speed: 0.1
-  aiming: 0.5
+  aiming: 0.05
   tar: {fileID: 0}
+  time: 4
 --- !u!60 &5251455096113729714
 PolygonCollider2D:
   m_ObjectHideFlags: 0

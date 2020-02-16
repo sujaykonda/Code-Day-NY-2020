@@ -3262,8 +3262,9 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 263df1c9556ff544497422f7e283e998, type: 3}
   - {fileID: 21300000, guid: 2ff229c348459404eb9730097a83fecd, type: 3}
   - {fileID: 21300000, guid: 861ae3aaeb8ce774ab8276afd2d0aeda, type: 3}
-  positions: []
-  movementSpeed: 1
+  positions:
+  - {x: 0, y: 3.15, z: -2}
+  movementSpeed: 0
   maxhealth: 50
 --- !u!212 &1092457006
 SpriteRenderer:

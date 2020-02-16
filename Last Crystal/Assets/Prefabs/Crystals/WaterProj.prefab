@@ -96,6 +96,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 10
+  speed: 0.1
+  aiming: 0
+  tar: {fileID: 0}
+  time: 5
 --- !u!61 &2844430202212613563
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -218,6 +222,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 10
+  speed: 0.1
+  aiming: 0
+  tar: {fileID: 0}
+  time: 5
 --- !u!61 &3556101956046916709
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -340,6 +348,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 10
+  speed: 0.1
+  aiming: 0
+  tar: {fileID: 0}
+  time: 5
 --- !u!61 &7712677246782899351
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -465,6 +477,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 10
+  speed: 0.1
+  aiming: 0
+  tar: {fileID: 0}
+  time: 4
 --- !u!61 &2683223857629099493
 BoxCollider2D:
   m_ObjectHideFlags: 0
