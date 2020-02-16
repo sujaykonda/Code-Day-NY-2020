@@ -3640,6 +3640,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   NextScene: FirstLevel
+  LastScene: Ending
 --- !u!1 &1467175842
 GameObject:
   m_ObjectHideFlags: 0
