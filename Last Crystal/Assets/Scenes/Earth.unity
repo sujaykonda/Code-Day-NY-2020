@@ -559,7 +559,7 @@ GameObject:
   - component: {fileID: 1390324924}
   - component: {fileID: 1390324923}
   m_Layer: 0
-  m_Name: FireBoss
+  m_Name: EarthBoss
   m_TagString: bad
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -654,6 +654,12 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 263df1c9556ff544497422f7e283e998, type: 3}
   - {fileID: 21300000, guid: 2ff229c348459404eb9730097a83fecd, type: 3}
   - {fileID: 21300000, guid: 861ae3aaeb8ce774ab8276afd2d0aeda, type: 3}
+  positions:
+  - {x: -12, y: 3, z: -2}
+  - {x: -12, y: -3, z: -2}
+  - {x: 12, y: -3, z: -2}
+  - {x: 12, y: 3, z: -2}
+  movementSpeed: 0.01
   maxhealth: 140
 --- !u!212 &1390324926
 SpriteRenderer:
@@ -713,7 +719,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1390324922}
   m_LocalRotation: {x: 0, y: 0, z: 1, w: 0}
-  m_LocalPosition: {x: 0, y: 3.15, z: -2}
+  m_LocalPosition: {x: -11.69, y: 3.2, z: -2}
   m_LocalScale: {x: 3, y: 3, z: 3}
   m_Children: []
   m_Father: {fileID: 0}

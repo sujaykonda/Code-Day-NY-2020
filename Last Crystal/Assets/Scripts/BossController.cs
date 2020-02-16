@@ -10,12 +10,15 @@ public class BossController : MonoBehaviour, IDamage
     public SpriteRenderer renderer;
     public Sprite[] sprites;
     public Vector3[] positions;
-    public float movementSpeed = 1;
+    public float movementSpeed = 0.1f;
+    float t = 0;
     float timer = 0;
     public float maxhealth = 50f;
     float health;
     float hitTimer = 0;
+    int state = 0;
     void Start(){
+        transform.position = positions[0];
         health = maxhealth;
     }    
     // Update is called once per frame
@@ -30,11 +33,20 @@ public class BossController : MonoBehaviour, IDamage
             Instantiate(proj, transform.position, transform.rotation);
             timer = 0;
         }
-        
+        t += movementSpeed;
+        transform.position = Vector3.Lerp(positions[state], positions[((state+1) % positions.Length)], t);
+        if(t >= 1){
+            t = 0;
+            state += 1;
+        }
+        if(state == positions.Length){
+            state = 0;
+        }
+
     }
     public void Hit(float damage){
-        if(hitTimer > 0.1f){
-            hitTimer = 0;
+        if(hitTimer > 0.2f){
+            hitTimer = 0f;
             health -= damage;
             for(var i = 0; i < 17; i++){
                 if((i*maxhealth/17) <= health && health <= ((i+1)*maxhealth/17)){
