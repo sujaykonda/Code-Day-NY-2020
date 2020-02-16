@@ -3757,7 +3757,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 59e277cae0f230949b6c5abbd7151d8f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneName: Earth
+  sceneName: EarthMinion
 --- !u!50 &1971445939
 Rigidbody2D:
   serializedVersion: 4

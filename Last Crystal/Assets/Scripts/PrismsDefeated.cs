@@ -4,4 +4,5 @@ using UnityEngine;
 
 public static class PrismsDefeated{
     public static List<string> defeatedPrisms = new List<string>();
+    public static int golemsLeft = 2;
 }
