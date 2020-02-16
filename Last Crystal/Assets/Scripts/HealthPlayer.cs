@@ -8,6 +8,7 @@ public class HealthPlayer : MonoBehaviour, IDamage
     public SpriteRenderer thing;
     public float helth;
     public float hitTimer;
+    public float effectTimer;
     public GameObject dedscreen;
 
     void Start()
@@ -25,6 +26,7 @@ public class HealthPlayer : MonoBehaviour, IDamage
     void Update()
     {
         hitTimer += Time.deltaTime;
+        effectTimer += Time.deltaTime;
         for(var i = 0; i < 33; i++){
             if((i*100/33) <= helth && helth <= ((i+1)*100/33)){
                 thing.sprite = Health[i];
@@ -47,6 +49,13 @@ public class HealthPlayer : MonoBehaviour, IDamage
         if(other.tag == "Death"){
             helth = 0;
             dedscreen.SetActive(true);
+        }
+        
+    }
+    void OnTriggerStay2D(Collider2D other){
+        if(other.tag == "Drowning"&& effectTimer > 0.1f){
+            effectTimer = 0;
+            helth -= 10;
         }
     }
 }
