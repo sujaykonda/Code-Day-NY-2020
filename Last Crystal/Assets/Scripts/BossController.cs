@@ -9,6 +9,7 @@ public class BossController : MonoBehaviour, IDamage
     public float attackSpeed = 1f;
     float timer = 0;
     float health = 10;
+    float hitTimer = 0;
     // Start is called before the first frame update
     void Start()
     {
@@ -19,6 +20,7 @@ public class BossController : MonoBehaviour, IDamage
     void FixedUpdate()
     {
         timer+= Time.fixedDeltaTime;
+        hitTimer += Time.fixedDeltaTime;
         Vector3 diff = transform.position - tar.position;
         float angle = Mathf.Atan2(diff.y, diff.x);
         transform.eulerAngles = new Vector3(0f,0f, angle * Mathf.Rad2Deg + 90f);
@@ -28,8 +30,9 @@ public class BossController : MonoBehaviour, IDamage
         }
     }
     public void Hit(float damage){
-        health -= damage;
-        Debug.Log(damage);
-        Debug.Log(health);
+        if(hitTimer > 0.1){
+            hitTimer = 0;
+            health -= damage;
+        }
     }
 }
