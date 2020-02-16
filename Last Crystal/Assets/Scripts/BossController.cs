@@ -57,6 +57,15 @@ public class BossController : MonoBehaviour, IDamage
             }
             if(health <= 0){
                 renderer.sprite = sprites[0];
+                bool IsIn = false;
+                foreach(string s in PrismsDefeated.defeatedPrisms){
+                    if(s.Equals(SceneManager.GetActiveScene().name)){
+                        IsIn = true;
+                    }
+                }
+                if(!IsIn){
+                    PrismsDefeated.defeatedPrisms.Add(SceneManager.GetActiveScene().name);
+                }
                 SceneManager.LoadScene(sceneName: scenename);
             }
         }
