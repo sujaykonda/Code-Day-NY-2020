@@ -497,6 +497,7 @@ MonoBehaviour:
   - {x: 0, y: 3.15, z: -2}
   movementSpeed: 0.1
   maxhealth: 100
+  scenename: FirstLevel
 --- !u!212 &705243514
 SpriteRenderer:
   m_ObjectHideFlags: 0
