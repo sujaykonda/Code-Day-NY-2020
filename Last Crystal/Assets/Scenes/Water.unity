@@ -472,7 +472,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   proj: {fileID: 7518012505617443173, guid: 9549810a6a6eadc49a5b2fd40b5a03b7, type: 3}
   tar: {fileID: 311274595}
-  attackSpeed: 1.1
+  attackSpeed: 1.5
   renderer: {fileID: 735154534}
   sprites:
   - {fileID: 21300000, guid: ab0bcd4c8eee3674597a6a88a973fdf0, type: 3}
@@ -492,6 +492,9 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 263df1c9556ff544497422f7e283e998, type: 3}
   - {fileID: 21300000, guid: 2ff229c348459404eb9730097a83fecd, type: 3}
   - {fileID: 21300000, guid: 861ae3aaeb8ce774ab8276afd2d0aeda, type: 3}
+  positions:
+  - {x: 0, y: 3.15, z: -2}
+  movementSpeed: 0.1
   maxhealth: 100
 --- !u!212 &705243514
 SpriteRenderer:
