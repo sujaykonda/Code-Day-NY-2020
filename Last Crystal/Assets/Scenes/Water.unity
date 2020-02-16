@@ -474,7 +474,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   proj: {fileID: 7518012505617443173, guid: 9549810a6a6eadc49a5b2fd40b5a03b7, type: 3}
   tar: {fileID: 311274595}
-  attackSpeed: 1.9
+  attackSpeed: 2.1
   renderer: {fileID: 735154534}
   sprites:
   - {fileID: 21300000, guid: ab0bcd4c8eee3674597a6a88a973fdf0, type: 3}

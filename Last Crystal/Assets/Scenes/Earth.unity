@@ -354,6 +354,7 @@ MonoBehaviour:
   thing: {fileID: 637902545}
   helth: 100
   hitTimer: 0
+  effectTimer: 0
   dedscreen: {fileID: 1975068009}
 --- !u!95 &1117679397
 Animator:
@@ -660,7 +661,7 @@ MonoBehaviour:
   - {x: -12, y: -3, z: -2}
   - {x: 12, y: -3, z: -2}
   - {x: 12, y: 3, z: -2}
-  movementSpeed: 0.01
+  movementSpeed: 0.007
   maxhealth: 140
   scenename: FirstLevel
 --- !u!212 &1390324926
