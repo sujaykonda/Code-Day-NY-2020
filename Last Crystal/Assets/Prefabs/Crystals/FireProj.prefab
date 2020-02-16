@@ -96,6 +96,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 10
+  speed: 0.1
+  aiming: 0
+  tar: {fileID: 0}
 --- !u!58 &-4806721550254365388
 CircleCollider2D:
   m_ObjectHideFlags: 0
