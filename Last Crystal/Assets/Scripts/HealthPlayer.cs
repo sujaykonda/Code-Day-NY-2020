@@ -13,6 +13,7 @@ public class HealthPlayer : MonoBehaviour, IDamage
 
     void Start()
     {
+        effectTimer = 0f;
         helth = 100;
         for(var i = 0; i < 33; i++){
             if((i*100/33) <= helth && helth <= ((i+1)*100/33)){
@@ -53,8 +54,8 @@ public class HealthPlayer : MonoBehaviour, IDamage
         
     }
     void OnTriggerStay2D(Collider2D other){
-        if(other.tag == "Drowning"&& effectTimer > 0.1f){
-            effectTimer = 0;
+        if(other.tag == "Drowning" && effectTimer > 0.1f){
+            effectTimer = 0f;
             helth -= 10;
         }
     }

@@ -236,6 +236,7 @@ MonoBehaviour:
   thing: {fileID: 1536224384}
   helth: 100
   hitTimer: 0
+  effectTimer: 0
   dedscreen: {fileID: 917912271}
 --- !u!95 &311274590
 Animator:
@@ -494,8 +495,10 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 2ff229c348459404eb9730097a83fecd, type: 3}
   - {fileID: 21300000, guid: 861ae3aaeb8ce774ab8276afd2d0aeda, type: 3}
   positions:
-  - {x: 0, y: 3.15, z: -2}
-  movementSpeed: 0.1
+  - {x: -5, y: 3.15, z: -2}
+  - {x: 5, y: 3.15, z: -2}
+  - {x: 0, y: 0, z: -2}
+  movementSpeed: 0.03
   maxhealth: 100
   scenename: FirstLevel
 --- !u!212 &705243514
@@ -900,7 +903,7 @@ GameObject:
   - component: {fileID: 1558486150}
   m_Layer: 0
   m_Name: WaterHitboxes
-  m_TagString: Untagged
+  m_TagString: Drowning
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -915,7 +918,7 @@ PolygonCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}

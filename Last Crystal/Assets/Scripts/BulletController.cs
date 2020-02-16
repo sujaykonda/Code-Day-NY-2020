@@ -9,6 +9,7 @@ public class BulletController : MonoBehaviour
     public float aiming = 0f;
     public Transform tar;
     public float time = 5f;
+    public float kb = 0f;
     float timer = 0;
     void Start(){
         tar = GameObject.Find("Player").transform;
