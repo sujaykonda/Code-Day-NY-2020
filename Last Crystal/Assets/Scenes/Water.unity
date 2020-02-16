@@ -236,6 +236,7 @@ MonoBehaviour:
   thing: {fileID: 1536224384}
   helth: 100
   hitTimer: 0
+  dedscreen: {fileID: 0}
 --- !u!95 &311274590
 Animator:
   serializedVersion: 3
@@ -472,7 +473,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   proj: {fileID: 7518012505617443173, guid: 9549810a6a6eadc49a5b2fd40b5a03b7, type: 3}
   tar: {fileID: 311274595}
-  attackSpeed: 1.5
+  attackSpeed: 1.75
   renderer: {fileID: 735154534}
   sprites:
   - {fileID: 21300000, guid: ab0bcd4c8eee3674597a6a88a973fdf0, type: 3}
