@@ -28,12 +28,12 @@ public class HealthPlayer : MonoBehaviour, IDamage
         for(var i = 0; i < 33; i++){
             if((i*100/33) <= helth && helth <= ((i+1)*100/33)){
                 thing.sprite = Health[i];
-                dedscreen.SetActive = false;
+                dedscreen.SetActive(false);
             }
         }
         if(helth < 0){
             thing.sprite = Health[0];
-            dedscreen.SetActive = true;
+            dedscreen.SetActive(true);
         }
     }
     public void Hit(float damage){
