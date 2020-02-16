@@ -356,6 +356,7 @@ MonoBehaviour:
   thing: {fileID: 314218002}
   helth: 100
   hitTimer: 0
+  dedscreen: {fileID: 0}
 --- !u!95 &1267007588
 Animator:
   serializedVersion: 3
@@ -3309,6 +3310,7 @@ MonoBehaviour:
   - {x: 0, y: 3.15, z: -2}
   movementSpeed: 0.1
   maxhealth: 50
+  scenename: FirstLevel
 --- !u!212 &2101021010
 SpriteRenderer:
   m_ObjectHideFlags: 0

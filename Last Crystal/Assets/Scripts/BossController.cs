@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class BossController : MonoBehaviour, IDamage
 {
@@ -17,6 +18,7 @@ public class BossController : MonoBehaviour, IDamage
     float health;
     float hitTimer = 0;
     int state = 0;
+    public string scenename;
     void Start(){
         transform.position = positions[0];
         health = maxhealth;
@@ -53,8 +55,9 @@ public class BossController : MonoBehaviour, IDamage
                     renderer.sprite = sprites[i];
                 }
             }
-            if(health < 0){
+            if(health <= 0){
                 renderer.sprite = sprites[0];
+                SceneManager.LoadScene(sceneName: scenename);
             }
         }
     }
