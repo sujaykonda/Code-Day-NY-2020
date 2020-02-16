@@ -54,7 +54,7 @@ public class HealthPlayer : MonoBehaviour, IDamage
         
     }
     void OnTriggerStay2D(Collider2D other){
-        if(other.tag == "Drowning"&& effectTimer > 0.1f){
+        if(other.tag == "Drowning" && effectTimer > 0.1f){
             effectTimer = 0f;
             helth -= 10;
         }
