@@ -31,7 +31,7 @@ public class HealthPlayer : MonoBehaviour, IDamage
                 dedscreen.SetActive(false);
             }
         }
-        if(helth < 0){
+        if(helth <= 0){
             thing.sprite = Health[0];
             dedscreen.SetActive(true);
         }
@@ -42,6 +42,12 @@ public class HealthPlayer : MonoBehaviour, IDamage
             helth -= damage;
         }
         
+    }
+    void OnTriggerEnter2D(Collider2D other){
+        if(other.tag == "Death"){
+            helth = 0;
+            dedscreen.SetActive(true);
+        }
     }
 }
 
